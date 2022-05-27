@@ -43,7 +43,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={ { boxShadow: 'floatingShadow' } }>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

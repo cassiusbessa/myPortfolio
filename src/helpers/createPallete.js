@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import shadows from '@mui/material/styles/shadows';
 
 const Darktheme = createTheme({
   palette: {
@@ -17,6 +18,7 @@ const Darktheme = createTheme({
       dark: '#1a0030',
       contrastText: '#ffffff',
     },
+
     // Used by `getContrastText()` to maximize the contrast between
     // the background and the text.
     contrastThreshold: 3,
@@ -24,6 +26,15 @@ const Darktheme = createTheme({
     // dois índices dentro de sua paleta tonal.
     // Por exemplo, mude de Red 500 para Red 300 ou Red 700.
     tonalOffset: 0.2,
+  },
+  typography: {
+    sectionTitle: {
+      color: 'primary.contrastText', fontWeight: 700, fontFamily: 'monospace', letterSpacing: '.3rem',
+    },
+  },
+  shadows: {
+    ...shadows,
+    floatingShadow: '0px 5px 15px 0px rgba(0,0,0,0.35)',
   },
 });
 
