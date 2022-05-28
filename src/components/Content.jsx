@@ -8,7 +8,7 @@ import Projects from './Projects';
 
 export default function Content() {
   return (
-    <Box sx={ { bgcolor: 'secondary.dark', height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center' } }>
+    <Box sx={ { bgcolor: 'secondary.dark', height: '100vh' } }>
       <Header />
       <Profile />
       <FrameWorks />
